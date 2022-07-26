@@ -1,0 +1,20 @@
+body {
+  background: #1a1a1a;
+  color: #fafafa;
+  margin: 0 0.5rem;
+}
+
+#header {
+  padding-top: 3rem;
+}
+#header h3 {
+  color: #7a7a7a;
+  font-weight: 300;
+}
+
+hr {
+  border: none;
+  border: 1px solid #3a3a3a;
+  margin: 5rem auto;
+  width: 90%;
+}/*# sourceMappingURL=styles.css.map */
