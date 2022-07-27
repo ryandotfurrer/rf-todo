@@ -1,27 +1,28 @@
 let userInput = document.getElementById("user-input");
-const addToDoBtn = document.getElementById("user-submit-btn");
+const addToDoBtn = document.getElementById("add-todo-btn");
 let toDoList = document.getElementById("user-list");
-let toDoListArray = [];
-
-function listFromArray() {
-	toDoListArray.forEach((toDo) => {
-		let li = document.createElement("li");
-		toDoList.append(li);
-		li.textContent += toDo;
-	});
-}
+let warning = document.querySelector(".warning");
 
 function resetInputs() {
-	userInputValue = "";
 	userInput.value = "";
 }
 
+function addToList(newToDo) {
+	const li = document.createElement("li");
+	newToDo = userInput.value;
+
+	if (newToDo === "") {
+		console.log("task empty");
+		warning.style.opacity = 1;
+	} else {
+		toDoList.appendChild(li);
+		li.textContent = newToDo;
+		warning.style.opacity = 0;
+	}
+}
+
 function addToDo() {
-	let userInputValue = userInput.value;
-	toDoListArray.push(userInputValue);
-	console.log(toDoListArray);
-	console.log(userInputValue);
-	listFromArray();
+	addToList();
 	resetInputs();
 }
 

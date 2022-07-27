@@ -12,15 +12,28 @@ body {
 
 #header {
 	padding-top: 3rem;
+
+	h1,
+	h3 {
+		line-height: 1;
+	}
 	h3 {
 		color: $grey-2;
 		font-weight: 300;
+		margin-bottom: 2.5rem;
 	}
+}
+
+.warning {
+	color: red;
+	font-size: smaller;
+	margin-bottom: 0.5rem;
+	opacity: 0;
 }
 
 hr {
 	border: none;
 	border: 1px solid $grey-1;
-	margin: 5rem auto;
+	margin: 2.5rem auto;
 	width: 90%;
 }

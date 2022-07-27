@@ -7,14 +7,26 @@ body {
 #header {
   padding-top: 3rem;
 }
+#header h1,
+#header h3 {
+  line-height: 1;
+}
 #header h3 {
   color: #7a7a7a;
   font-weight: 300;
+  margin-bottom: 2.5rem;
+}
+
+.warning {
+  color: red;
+  font-size: smaller;
+  margin-bottom: 0.5rem;
+  opacity: 0;
 }
 
 hr {
   border: none;
   border: 1px solid #3a3a3a;
-  margin: 5rem auto;
+  margin: 2.5rem auto;
   width: 90%;
 }/*# sourceMappingURL=styles.css.map */
