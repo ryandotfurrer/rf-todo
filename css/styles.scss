@@ -3,6 +3,8 @@ $grey-1: #3a3a3a;
 $grey-2: #7a7a7a;
 $grey-3: #fafafa;
 $accent: orange;
+$red: tomato;
+$green: mediumspringgreen;
 
 body {
 	background: $grey-0;
@@ -25,10 +27,14 @@ body {
 }
 
 .warning {
-	color: red;
+	color: $red;
 	font-size: smaller;
 	margin-bottom: 0.5rem;
 	opacity: 0;
+}
+
+#add-todo-btn:hover {
+	background: $green;
 }
 
 hr {
@@ -36,4 +42,32 @@ hr {
 	border: 1px solid $grey-1;
 	margin: 2.5rem auto;
 	width: 90%;
+}
+
+#user-list {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+	hyphens: auto;
+
+	.list-item-container {
+		align-items: center;
+		display: flex;
+		justify-content: space-between;
+		padding: 0.5rem 0;
+
+		.list-item-todo-container {
+			display: flex;
+			gap: 0.5rem;
+		}
+
+		.list-item-btn-container {
+			display: flex;
+			gap: 0.5rem;
+
+			.delete-btn:hover {
+				background: $red;
+			}
+		}
+	}
 }

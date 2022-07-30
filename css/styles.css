@@ -18,10 +18,14 @@ body {
 }
 
 .warning {
-  color: red;
+  color: tomato;
   font-size: smaller;
   margin-bottom: 0.5rem;
   opacity: 0;
+}
+
+#add-todo-btn:hover {
+  background: mediumspringgreen;
 }
 
 hr {
@@ -29,4 +33,30 @@ hr {
   border: 1px solid #3a3a3a;
   margin: 2.5rem auto;
   width: 90%;
+}
+
+#user-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+}
+#user-list .list-item-container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+}
+#user-list .list-item-container .list-item-todo-container {
+  display: flex;
+  gap: 0.5rem;
+}
+#user-list .list-item-container .list-item-btn-container {
+  display: flex;
+  gap: 0.5rem;
+}
+#user-list .list-item-container .list-item-btn-container .delete-btn:hover {
+  background: tomato;
 }/*# sourceMappingURL=styles.css.map */
